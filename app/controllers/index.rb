@@ -1,6 +1,11 @@
+enable :sessions
+
 get '/' do
-  # Look in app/views/index.erb
-  erb :index
+  if logged_in?
+	  erb :"users/index" 
+	else 
+		erb :index
+	end
 end
 
 
