@@ -73,12 +73,12 @@ $(document).ready(function() {
             values: phys,
             area: true,
             color: "#22fb88",
-            key: "Pharmacy"
+            key: "Physician"
         }, {
             values: pharm,
             area: true,
             color: "#333333",
-            key: "Physician"
+            key: "Pharmacy"
         }];
     }
 
