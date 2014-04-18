@@ -1,11 +1,120 @@
-.container {
-  margin: 20px auto;
-  width: 100%;
-  min-width: 600px;
-  padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+body {
+  background-image:url('/img/blurredbackground.png');
 }
 
-th {
-  text-align: left;
+img.landing {
+/*  width: 100%;
+  height: 100%;*/
+}
+
+.form_style {
+  font-family: 'Varela Round' ;
+  z-index: 1;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  right: 30;
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #303030;
+}
+
+#centered-submit {
+  margin-left: 10%;
+  margin-right: auto;
+}
+
+.centered{
+  width: 75%;
+  margin-left: 10%;
+  margin-right: 15%;
+}
+
+div.glyph_list {
+  font-family: 'Varela Round' ;
+  z-index: 1;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+/*  margin-right: auto;
+  margin-left: auto;*/
+}
+
+div.glyph {
+  color: #353535;
+  display: inline-block;
+  margin: 5% 5%;
+}
+
+div.glyph a {
+  color: inherit;
+  text-decoration: none;
+}
+
+div.glyph:hover {
+  color: black;
+}
+
+i.glyphicon {
+  padding: 5%;
+  box-shadow: 3px 3px 5px #303030;
+  border-radius: 10px;
+  border: .05em solid #353535;
+  font-size: 6.0em;
+}
+
+i.glyphicon:hover {
+  border: .05em solid black;
+}
+
+input.centered {
+  height: 5%;
+}
+
+span.glyph_desc {
+  margin-top: 7px;
+  display: block;
+  text-align: center;
+}
+
+div#sidebar-wrapper {
+  width: 130px;
+  margin-right: 20px;
+  position: fixed;
+  top: 59px;
+  left: 0;
+  z-index: 1;
+  height: 35%;
+}
+
+ul.side {
+  padding: 0;
+}
+
+ul.side li a{
+  color: #353535;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+ul.side li a:hover {
+  color: black;
+}
+
+div#groupings {
+  width: 60%;
+  overflow: none;
+  margin-left: 150px;
+  margin-bottom: 20px;
+}
+
+h2.grouping {
+  font-family: 'Varela Round';
 }

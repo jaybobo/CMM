@@ -290,6 +290,7 @@ a:focus {
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
   width: 940px;
+  margin: 0 auto;
 }
 
 .span12 {
@@ -4365,7 +4366,7 @@ input[type="submit"].btn.btn-mini {
 .navbar {
   *position: relative;
   *z-index: 2;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
   overflow: visible;
 }
 
@@ -6164,4 +6165,18 @@ a.badge:focus {
 
 .affix {
   position: fixed;
+}
+
+/* Additional Styling */
+
+#footer {
+  margin-top: 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 20px;
+  background-color: #f5f5f5;
+  border-radius: 2px;
 }

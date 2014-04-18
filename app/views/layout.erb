@@ -16,6 +16,10 @@
   <!-- D3 css -->
   <link rel="stylesheet" type="text/css" href="/d3-chart/nv.d3.min.css">
   <link rel="stylesheet" type="text/css" href="/d3-chart/d3-charts.css">
+  <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="/css/application.css">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
   <script src="/ezpie/jquery.easypiechart.js"></script>
@@ -27,8 +31,26 @@
   
 </head>
 <body>
+<nav class="navbar navbar-default" role="navigation">
+              <div class="navbar-inner">
+                <div class="container">
+                  <ul class="nav">
+                    <li class="active"><a href="/">Pharm Assist+</a></li>
+                  </ul>
+                  <ul class="nav pull-right">
+                    <% if session[:user_id] %>
+                      <li><a href="/">Log Out</a></li>
+                    <% else %>    
+                      <li><a href="/sign_up">Sign Up</a></li>
+                      <li><a href="/log_in">Log In</a></li>
+                  <% end %>
+                  </ul>
+                </div>
+              </div>
+</nav>
   <%= yield %>
 
+<<<<<<< HEAD
   <!-- JS goes here -->
 
   
@@ -65,5 +87,15 @@
 
 
 
+=======
+  <div id="footer" class="container">
+      <p class="text-muted">Pharm Assist+ &copy 2014</p>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <script src="/js/application.js"></script>
+  <script src="/js/bootstrap/bootstrap.js"></script>
+>>>>>>> Ron-Testing
 </body>
 </html>
