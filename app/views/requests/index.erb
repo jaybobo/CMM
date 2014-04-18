@@ -1,0 +1,27 @@
+<div class="container">
+
+		<script id="data_chart" type="text/javascript"><%= @bar_chart_data.to_json %></script>
+
+
+		<div id="chart1" class='with-3d-shadow with-transitions'>
+			<svg></svg>
+		</div>
+
+		<script id="physician_line_data" type="text/javascript"><%= @physician_values.to_json %></script>
+		<script id="pharm_line_data" type="text/javascript"><%= @pharm_values.to_json %></script>
+
+
+		<div class='chart-line' id='chart9'>
+      <svg></svg>
+    </div>
+
+		<div class="pie-charts">
+	    <h2>Test1</h2>
+			<svg id="test1" class="mypiechart"></svg>
+
+			<h2>Test2</h2>
+			<svg id="test2" class="mypiechart"></svg>
+		</div>
+</div>
+
+
