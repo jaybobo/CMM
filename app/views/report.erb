@@ -1,6 +1,6 @@
 <div id="sidebar-wrapper">
   <ul class="side nav sidebar-nav navbar-inner">
-      <li><a name="top" href="#top">Top</a></li>
+      <li><a name="top" href="#top">Summary</a></li>
       <li><a name="product" href="#product">Product</a>
       </li>
       <li><a name="user" href="#user">User</a>
@@ -15,23 +15,65 @@
 </div>
 
 <div id="groupings" class="container">
-<h2 id="top" class="grouping">Top</h2>
-<h3>&lt Some Graphs in Here &gt</h3>
+
+<section class="firstsec"><h2 id="top" class="grouping">Program Summary</h2>
+
+<script id="requests_YTD_by_phys" type="text/javascript"><%= @total_requests_YTD_by_phys.to_json %></script>
+
+<script id="requests_YTD_by_pharm" type="text/javascript"><%= @total_requests_YTD_by_pharm.to_json %></script>
+
+<div id="pie-chart">
+  <svg id="test2"></svg>
+</div>
+
+
 <p>Lorem ipsum dolor sit amet, labore debitis corpora ut ius, quod deterruisset cu qui, vim no rebum meliore pericula. Forensibus instructior usu ne, utinam mollis his et. Vim et cibo moderatius honestatis. Mucius similique his id, id modo ornatus his, probatus similique adolescens duo ut.</p>
 <p>Possit tibique singulis et usu, duo eu causae quaerendum. Ferri putent incorrupte cum at. Suavitate sententiae ea vel, omnesque iudicabit adolescens mea et. At nam elit audiam accusam, no duo bonorum delenit.</p>
-<h2 id="product" class="grouping">Product</h2>
 <p>Lorem ipsum dolor sit amet, labore debitis corpora ut ius, quod deterruisset cu qui, vim no rebum meliore pericula. Forensibus instructior usu ne, utinam mollis his et. Vim et cibo moderatius honestatis. Mucius similique his id, id modo ornatus his, probatus similique adolescens duo ut.</p>
 <p>Possit tibique singulis et usu, duo eu causae quaerendum. Ferri putent incorrupte cum at. Suavitate sententiae ea vel, omnesque iudicabit adolescens mea et. At nam elit audiam accusam, no duo bonorum delenit.</p>
-<h2 id="user" class="grouping">User</h2>
+
+</section>
+
+<section>
+<h2 id="product" class="grouping">Volume By Product</h2>
+
+<script id="data_chart" type="text/javascript"><%= @bar_chart_data.to_json %></script>
+
+
+<div id="chart1" class='with-3d-shadow with-transitions'>
+      <svg></svg>
+    </div>
+
+
 <p>Lorem ipsum dolor sit amet, labore debitis corpora ut ius, quod deterruisset cu qui, vim no rebum meliore pericula. Forensibus instructior usu ne, utinam mollis his et. Vim et cibo moderatius honestatis. Mucius similique his id, id modo ornatus his, probatus similique adolescens duo ut.</p>
-<p>Possit tibique singulis et usu, duo eu causae quaerendum. Ferri putent incorrupte cum at. Suavitate sententiae ea vel, omnesque iudicabit adolescens mea et. At nam elit audiam accusam, no duo bonorum delenit.</p>
-<h2 id="state" class="grouping">State</h2>
+</section>
+
+<section>
+<h2 id="user" class="grouping">Volume By User Type</h2>
+
+<script id="physician_line_data" type="text/javascript"><%= @physician_values.to_json %></script>
+<script id="pharm_line_data" type="text/javascript"><%= @pharm_values.to_json %></script>
+
+
+<div class='chart-line' id='chart9'>
+  <svg></svg>
+</div>
+
 <p>Lorem ipsum dolor sit amet, labore debitis corpora ut ius, quod deterruisset cu qui, vim no rebum meliore pericula. Forensibus instructior usu ne, utinam mollis his et. Vim et cibo moderatius honestatis. Mucius similique his id, id modo ornatus his, probatus similique adolescens duo ut.</p>
-<p>Possit tibique singulis et usu, duo eu causae quaerendum. Ferri putent incorrupte cum at. Suavitate sententiae ea vel, omnesque iudicabit adolescens mea et. At nam elit audiam accusam, no duo bonorum delenit.</p>
-<h2 id="territory" class="grouping">Territory</h2>
+</section>
+
+<section>
+<h2 id="state" class="grouping">Volume By State</h2>
 <p>Lorem ipsum dolor sit amet, labore debitis corpora ut ius, quod deterruisset cu qui, vim no rebum meliore pericula. Forensibus instructior usu ne, utinam mollis his et. Vim et cibo moderatius honestatis. Mucius similique his id, id modo ornatus his, probatus similique adolescens duo ut.</p>
-<p>Possit tibique singulis et usu, duo eu causae quaerendum. Ferri putent incorrupte cum at. Suavitate sententiae ea vel, omnesque iudicabit adolescens mea et. At nam elit audiam accusam, no duo bonorum delenit.</p>
+</section>
+
+<section>
+<h2 id="territory" class="grouping">Volume By Territory</h2>
+<p>Lorem ipsum dolor sit amet, labore debitis corpora ut ius, quod deterruisset cu qui, vim no rebum meliore pericula. Forensibus instructior usu ne, utinam mollis his et. Vim et cibo moderatius honestatis. Mucius similique his id, id modo ornatus his, probatus similique adolescens duo ut.</p>
+</section>
+
 <h2 id="trends" class="grouping">Trends & Totals</h2>
 <p>Lorem ipsum dolor sit amet, labore debitis corpora ut ius, quod deterruisset cu qui, vim no rebum meliore pericula. Forensibus instructior usu ne, utinam mollis his et. Vim et cibo moderatius honestatis. Mucius similique his id, id modo ornatus his, probatus similique adolescens duo ut.</p>
-<p>Possit tibique singulis et usu, duo eu causae quaerendum. Ferri putent incorrupte cum at. Suavitate sententiae ea vel, omnesque iudicabit adolescens mea et. At nam elit audiam accusam, no duo bonorum delenit.</p>
+</section>
+
 </div>

@@ -1,6 +1,6 @@
 
 #get all requests
-get '/requests' do
+get '/reports' do
 
 	months = ["2013-07-01","2013-08-01","2013-09-01","2013-10-01","2013-11-01","2013-12-01"]
 	
@@ -13,7 +13,7 @@ get '/requests' do
 	
 
 
-	erb :"requests/index"
+	erb :report
 end
 
 
