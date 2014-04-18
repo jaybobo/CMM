@@ -3,7 +3,7 @@ enable :sessions
 #user-dashboard
 get '/users' do
 	if logged_in?
-		erb :"users/index" 
+		erb :"users/dashboard" 
 	else
 		erb :index
 	end
@@ -17,11 +17,13 @@ end
 
 #authenticate on login page
 post '/users/login' do
+	p session
+	p params
 	@user = User.find_by(email: params[:email])
 
 	if @user && @user.authenticate(params[:password])
 		session[:user_id] = @user.id
-		erb :"users/index" 
+		erb :"users/dashboard" 
 	else
 		redirect to "/"
 	end
@@ -29,12 +31,13 @@ end
 
 #sign up page
 post '/session/new' do
-	p params[:user]
+	p session
+	p params
 	@user = User.new(params[:user])
-
+	p @user
 	if @user.save
 		session[:user_id] = @user.id
-		erb :"users/index" 
+		erb :"users/dashboard" 
 	else
 		redirect to "/"
 	end

@@ -1,0 +1,91 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/0.10.26/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'bootflat' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose cache add [ 'bootflat', null ]
+5 verbose cache add name=undefined spec="bootflat" args=["bootflat",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'bootflat',
+6 verbose parsed url   path: 'bootflat',
+6 verbose parsed url   href: 'bootflat' }
+7 silly lockFile c2237a19-bootflat bootflat
+8 verbose lock bootflat /Users/rongierlach/.npm/c2237a19-bootflat.lock
+9 silly lockFile c2237a19-bootflat bootflat
+10 silly lockFile c2237a19-bootflat bootflat
+11 verbose addNamed [ 'bootflat', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 5324ea9e-bootflat bootflat@
+14 verbose lock bootflat@ /Users/rongierlach/.npm/5324ea9e-bootflat.lock
+15 silly addNameRange { name: 'bootflat', range: '*', hasData: false }
+16 verbose url raw bootflat
+17 verbose url resolving [ 'https://registry.npmjs.org/', './bootflat' ]
+18 verbose url resolved https://registry.npmjs.org/bootflat
+19 info trying registry request attempt 1 at 17:32:47
+20 http GET https://registry.npmjs.org/bootflat
+21 http 200 https://registry.npmjs.org/bootflat
+22 silly registry.get cb [ 200,
+22 silly registry.get   { date: 'Thu, 17 Apr 2014 22:32:48 GMT',
+22 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+22 silly registry.get     etag: '"MJJXU6CUURM6KF3PS975M4QE"',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     'cache-control': 'max-age=1',
+22 silly registry.get     'content-length': '5640',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     age: '0',
+22 silly registry.get     'x-served-by': 'cache-v37-ASH, cache-at50-ATL',
+22 silly registry.get     'x-cache': 'MISS, MISS',
+22 silly registry.get     'x-cache-hits': '0, 0',
+22 silly registry.get     'x-timer': 'S1397773968.149310589,VS0,VS7,VE399,VE406',
+22 silly registry.get     vary: 'Accept',
+22 silly registry.get     'keep-alive': 'timeout=10, max=50',
+22 silly registry.get     connection: 'Keep-Alive' } ]
+23 silly addNameRange number 2 { name: 'bootflat', range: '*', hasData: true }
+24 silly addNameRange versions [ 'bootflat', [ '2.0.1' ] ]
+25 verbose addNamed [ 'bootflat', '2.0.1' ]
+26 verbose addNamed [ '2.0.1', '2.0.1' ]
+27 silly lockFile d9b319f6-bootflat-2-0-1 bootflat@2.0.1
+28 verbose lock bootflat@2.0.1 /Users/rongierlach/.npm/d9b319f6-bootflat-2-0-1.lock
+29 silly lockFile 58dbd65d--org-bootflat-bootflat-2-0-1-tgz https://registry.npmjs.org/bootflat/-/bootflat-2.0.1.tgz
+30 verbose lock https://registry.npmjs.org/bootflat/-/bootflat-2.0.1.tgz /Users/rongierlach/.npm/58dbd65d--org-bootflat-bootflat-2-0-1-tgz.lock
+31 verbose addRemoteTarball [ 'https://registry.npmjs.org/bootflat/-/bootflat-2.0.1.tgz',
+31 verbose addRemoteTarball   'd74a27eb3251221944657808ea21579fc7fbc4c8' ]
+32 info retry fetch attempt 1 at 17:32:47
+33 verbose fetch to= /var/folders/k8/5ws62hkd7292rh4k6_rss3r80000gn/T/npm-5357-5JAZhmpu/1397773967949-0.979599729180336/tmp.tgz
+34 http GET https://registry.npmjs.org/bootflat/-/bootflat-2.0.1.tgz
+35 http 200 https://registry.npmjs.org/bootflat/-/bootflat-2.0.1.tgz
+36 silly lockFile 58dbd65d--org-bootflat-bootflat-2-0-1-tgz https://registry.npmjs.org/bootflat/-/bootflat-2.0.1.tgz
+37 silly lockFile 58dbd65d--org-bootflat-bootflat-2-0-1-tgz https://registry.npmjs.org/bootflat/-/bootflat-2.0.1.tgz
+38 silly lockFile d9b319f6-bootflat-2-0-1 bootflat@2.0.1
+39 silly lockFile d9b319f6-bootflat-2-0-1 bootflat@2.0.1
+40 silly lockFile 5324ea9e-bootflat bootflat@
+41 silly lockFile 5324ea9e-bootflat bootflat@
+42 error Error: shasum check failed for /var/folders/k8/5ws62hkd7292rh4k6_rss3r80000gn/T/npm-5357-5JAZhmpu/1397773967949-0.979599729180336/tmp.tgz
+42 error Expected: d74a27eb3251221944657808ea21579fc7fbc4c8
+42 error Actual:   61e8a6aeed60b7288a012aa8cc5c2eebac137b03
+42 error From:     https://registry.npmjs.org/bootflat/-/bootflat-2.0.1.tgz
+42 error     at /usr/local/Cellar/node/0.10.26/lib/node_modules/npm/node_modules/sha/index.js:38:8
+42 error     at ReadStream.<anonymous> (/usr/local/Cellar/node/0.10.26/lib/node_modules/npm/node_modules/sha/index.js:85:7)
+42 error     at ReadStream.EventEmitter.emit (events.js:117:20)
+42 error     at _stream_readable.js:920:16
+42 error     at process._tickCallback (node.js:415:13)
+43 error If you need help, you may report this *entire* log,
+43 error including the npm and node versions, at:
+43 error     <http://github.com/npm/npm/issues>
+44 error System Darwin 12.5.0
+45 error command "/usr/local/Cellar/node/0.10.26/bin/node" "/usr/local/bin/npm" "install" "bootflat"
+46 error cwd /Users/rongierlach/Desktop/CMM
+47 error node -v v0.10.26
+48 error npm -v 1.4.3
+49 verbose exit [ 1, true ]
