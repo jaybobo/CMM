@@ -1,11 +1,19 @@
 enable :sessions
 
 get '/' do
-  if logged_in?
-	  erb :"users/index" 
-	else 
+ #  if logged_in?
+	#   erb :"users/index" 
+	# else 
 		erb :index
-	end
+	# end  
 end
 
+# ---------- TESTING ----------
+
+get '/user' do
+
+  erb :'users/index'
+end
+
+get '/login' do 
 

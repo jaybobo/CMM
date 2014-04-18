@@ -10,6 +10,7 @@ img.landing {
 }
 
 .sign_up {
+  font-family: 'Varela Round' ;
   z-index: 1;
   position: absolute;
   top: 10%;
