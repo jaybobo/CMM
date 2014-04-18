@@ -16,4 +16,6 @@ get '/user' do
 end
 
 get '/login' do 
+  erb :log_in
+end
 

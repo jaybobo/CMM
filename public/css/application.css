@@ -9,7 +9,7 @@ img.landing {
 
 }
 
-.sign_up {
+.form_style {
   font-family: 'Varela Round' ;
   z-index: 1;
   position: absolute;
@@ -30,7 +30,40 @@ img.landing {
 }
 
 .centered{
-  width: 70%;
+  width: 75%;
   margin-left: 10%;
-  margin-right: 20%;
+  margin-right: 15%;
 }
+
+.glyph_list {
+  font-family: 'Varela Round' ;
+  z-index: 1;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  right: 15%;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+
+
+}
+
+div.glyph {
+  display: inline;
+}
+
+i.glyphicon {
+  margin: 5% 5%;
+  padding: 5px;
+  box-shadow: 3px 3px 5px #303030;
+  border: .05em solid #666666;
+  border-radius: 10px;
+  color: #666666;
+  font-size: 7.0em;
+}
+
+input.centered {
+  height: 5%;
+}
+
