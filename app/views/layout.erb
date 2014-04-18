@@ -10,14 +10,39 @@
   <!--
     application.css is where you put your styles
   -->
+  <link rel="stylesheet" href="/css/bootstrap/bootstrap.css">
   <link rel="stylesheet" href="/css/application.css">
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="/js/application.js"></script>
 
   <title></title>
 </head>
 <body>
+<nav class="navbar navbar-default" role="navigation">
+              <div class="navbar-inner">
+                <div class="container">
+                  <ul class="nav">
+                    <li class="active"><a href="/">Pharm Assist+</a></li>
+                  </ul>
+                  <ul class="nav pull-right">
+                    <% if session[:user_id] %>
+                      <li><a href="/">Log Out</a></li>
+                    <% else %>    
+                      <li><a href="/sign_up">Sign Up</a></li>
+                      <li><a href="/log_in">Log In</a></li>
+                  <% end %>
+                  </ul>
+                </div>
+              </div>
+</nav>
+<div class="background-image">    
+  <img src="/img/blurredbackground.png"/>
   <%= yield %>
+  <div id="footer" class="container">
+      <p class="text-muted">Pharm Assist+ &copy 2014</p>
+  </div>
+</div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  </div>
+  <script src="/js/application.js"></script>
+  <script src="/js/bootstrap/bootstrap.js"></script>
 </body>
 </html>

@@ -4365,7 +4365,7 @@ input[type="submit"].btn.btn-mini {
 .navbar {
   *position: relative;
   *z-index: 2;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
   overflow: visible;
 }
 
@@ -6164,4 +6164,17 @@ a.badge:focus {
 
 .affix {
   position: fixed;
+}
+
+/* Additional Styling */
+
+#footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 20px;
+  background-color: #f5f5f5;
+  border-radius: 2px;
 }
