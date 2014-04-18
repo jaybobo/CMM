@@ -15,6 +15,12 @@ end
 
 
 #display single request
-get '/requests/:id' do
-end
+# get '/requests/:id' do
+# end
 
+get '/requests/ezpie' do
+
+	puts "that"
+	
+	erb :ezindex
+end
