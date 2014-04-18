@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    console.log($('#physician_line_data').html());
+
     var physData = JSON.parse($('#physician_line_data').html());
     var pharmData = JSON.parse($('#pharm_line_data').html());
 
@@ -7,7 +9,7 @@ $(document).ready(function() {
     defaultChartConfig("chart9", lineData(physData, pharmData), false, true);
 
 
-    console.log(lineData(physData, pharmData));
+    //console.log(lineData(physData, pharmData));
 
     function defaultChartConfig(containerid, data, guideline, useDates, auxOptions) {
         if (auxOptions === undefined) auxOptions = {};

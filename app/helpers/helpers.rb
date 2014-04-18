@@ -35,14 +35,22 @@ end
 def prepare_bar_chart_data(months, key)
 	values = months.map do |month|
 		{:label => month, :value => total_count_by_date(month)} 
-	end
-	#[{:key => key, :values => values, :length => values.length}]	
+	end	
 	values
+end
+
+#YTD totals for inital report pie chart
+def total_requests_YTD(key)
+  [{:key => key, :value => total_count_by_user_type(key)}]
 end
 
 
 
 #Needed Queries for Summary#
+#@total_requests_YTD_by_pharm = total_requests_YTD("Pharmacy")
+#@total_requests_YTD_by_phys = total_requests_YTD("Physician")
+
+
 	# @total_pharmacy_requests_ytd = total_count_by_user_type("Pharmacy")
 	# @total_physician_requests_ytd = total_count_by_user_type("Physician")
 # 
