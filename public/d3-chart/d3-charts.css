@@ -21,3 +21,10 @@ svg {
   of course 1 pixel for the entire chart would not be very useful, BUT should not have errors
 */
 }
+
+#chart9 svg {
+  height: 400px;
+  min-width: 100px;
+  min-height: 100px;
+}
+

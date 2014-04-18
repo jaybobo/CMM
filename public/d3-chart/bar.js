@@ -25,7 +25,7 @@ $(document).ready(function() {
     // }]
 
 
-    var values = $('#data_chart').html(); //JSON.parse($('#data_chart').html());
+    var values = $('#data_chart').html();
 
     var newvalues = JSON.parse(values);
 
