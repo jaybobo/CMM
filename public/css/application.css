@@ -1,11 +1,16 @@
+body {
+  background-image:url('/img/blurredbackground.png');
+}
+
 img.landing {
-  width: 100%;
-  height: 100%;
+/*  width: 100%;
+  height: 100%;*/
 }
 
 .background-image {
   /*background-image:url('/img/blurredbackground.png');*/
   position:relative;
+  z-index: 0;
 
 }
 
@@ -13,7 +18,7 @@ img.landing {
   font-family: 'Varela Round' ;
   z-index: 1;
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 30%;
   right: 30;
   width: 40%;
@@ -35,24 +40,27 @@ img.landing {
   margin-right: 15%;
 }
 
-.glyph_list {
+div.glyph_list {
   font-family: 'Varela Round' ;
   z-index: 1;
   position: absolute;
-  top: 10%;
-  left: 15%;
-  right: 15%;
-  width: 70%;
-  margin-right: auto;
-  margin-left: auto;
-
-
+  top: 20%;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+/*  margin-right: auto;
+  margin-left: auto;*/
 }
 
 div.glyph {
   color: #353535;
   display: inline-block;
-    margin: 5% 5%;
+  margin: 5% 5%;
+}
+
+div.glyph a {
+  color: inherit;
+  text-decoration: none;
 }
 
 div.glyph:hover {
@@ -81,3 +89,16 @@ span.glyph_desc {
   text-align: center;
 }
 
+div#sidebar-wrapper {
+  margin-right: 20px;
+  position: fixed;
+  top: 10%;
+  left: 0;
+  z-index: 1;
+}
+
+div#groupings {
+  width: 80%;
+  overflow: none;
+  margin-left: 150px;
+}
