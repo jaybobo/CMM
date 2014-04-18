@@ -6170,6 +6170,7 @@ a.badge:focus {
 /* Additional Styling */
 
 #footer {
+  margin-top: 0;
   text-align: center;
   position: fixed;
   bottom: 0;
