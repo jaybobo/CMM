@@ -28,3 +28,10 @@ svg {
   min-height: 100px;
 }
 
+#pie-chart svg {
+  height: 500px;
+  width: 100%;
+  min-width: 100px;
+  min-height: 100px;
+}
+

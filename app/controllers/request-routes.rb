@@ -8,6 +8,9 @@ get '/requests' do
 	@pharm_values = prepare_line_chart_data(months, "Pharmacy")
 	@bar_chart_data = prepare_bar_chart_data(months, "Total Requests")
 
+	@total_requests_YTD_by_phys = total_count_by_user_type("Physician")
+	@total_requests_YTD_by_pharm = total_count_by_user_type("Pharmacy")	
+	
 
 
 	erb :"requests/index"
@@ -18,9 +21,3 @@ end
 # get '/requests/:id' do
 # end
 
-get '/requests/ezpie' do
-
-	puts "that"
-	
-	erb :ezindex
-end

@@ -15,12 +15,13 @@
       <svg></svg>
     </div>
 
-		<div class="pie-charts">
-	    <h2>Test1</h2>
-			<svg id="test1" class="mypiechart"></svg>
 
-			<h2>Test2</h2>
-			<svg id="test2" class="mypiechart"></svg>
+		<script id="requests_YTD_by_phys" type="text/javascript"><%= @total_requests_YTD_by_phys.to_json %></script>
+
+		<script id="requests_YTD_by_pharm" type="text/javascript"><%= @total_requests_YTD_by_pharm.to_json %></script>
+
+		<div id="pie-chart">
+			<svg id="test2"></svg>
 		</div>
 </div>
 
