@@ -15,6 +15,7 @@ require 'pg'
 require 'active_record'
 require 'bcrypt'
 require 'logger'
+require 'json'
 
 require 'sinatra'
 require "sinatra/reloader" if development?
