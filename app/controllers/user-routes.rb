@@ -9,6 +9,12 @@ get '/users' do
 	end
 end
 
+#login
+get '/log_in' do
+  erb :log_in
+end
+
+
 #logout
 get '/users/logout' do
 	session.clear

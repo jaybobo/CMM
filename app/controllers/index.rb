@@ -1,4 +1,4 @@
-enable :sessions
+# enable :sessions
 
 get '/' do
   if logged_in?
@@ -8,9 +8,9 @@ get '/' do
 	end  
 end
 
-get '/log_in' do
-  erb :log_in
-end
+# get '/log_in' do
+#   erb :log_in
+# end
 
 # # ---------- TESTING ----------
 

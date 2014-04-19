@@ -1,6 +1,6 @@
 #training dashboard
 get '/training' do
-  erb :training
+  erb :"training/index"
 end
 
 
