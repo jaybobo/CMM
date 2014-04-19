@@ -13,7 +13,7 @@ get '/reports' do
 	
 
 
-	erb :report
+	erb :"reports/index"
 end
 
 

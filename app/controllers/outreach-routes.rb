@@ -1,5 +1,5 @@
 
 #outreach dashboard
 get '/outreach' do
-  erb :outreach
+  erb :"outreach/index"
 end
