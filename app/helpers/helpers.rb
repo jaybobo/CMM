@@ -45,6 +45,20 @@ def total_requests_YTD(key)
 end
 
 
+def summary_chart_data(coltype, months)
+	total_data = months.map do |month|
+		count_by_user_and_month_part(coltype, month)
+	end
+
+
+	{coltype => total_data}
+end
+
+def add_elements_of_two_arrays(array1, array2)
+	totals = [] << array1 << array2
+	totals.transpose.map {|n| n.reduce(:+)}
+end
+
 
 #Needed Queries for Summary#
 #@total_requests_YTD_by_pharm = total_requests_YTD("Pharmacy")
