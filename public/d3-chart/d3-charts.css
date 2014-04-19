@@ -28,10 +28,20 @@ svg {
   min-height: 100px;
 }
 
-#pie-chart svg {
-  height: 500px;
-  width: 100%;
-  min-width: 100px;
-  min-height: 100px;
+#pie-chart {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  height: 300px;
 }
 
+#pie-chart svg {
+margin-bottom: 0;
+}
+
+section {
+  margin-bottom: 85px;
+}
+
+section.firstsec {
+  margin-bottom: 150px;
+}
