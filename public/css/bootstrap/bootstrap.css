@@ -6180,3 +6180,7 @@ a.badge:focus {
   background-color: #f5f5f5;
   border-radius: 2px;
 }
+
+#fixme {position: fixed;left: 0;right: 0; top:0;}
+/* prevent overlap */
+body{padding-top:70px;}

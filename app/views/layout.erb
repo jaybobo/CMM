@@ -29,6 +29,8 @@
   
 </head>
 <body>
+<div id="fixme">
+<div class="">
   <nav class="navbar navbar-default" role="navigation">
                 <div class="navbar-inner">
                   <div class="container">
@@ -37,6 +39,8 @@
                     </ul>
                     <ul class="nav pull-right">
                       <% if session[:user_id] %>
+                        <li><a href="/dashboard">Dashboard</a></li>
+                        <li class="nav-divider"></li>
                         <li><a href="/users/logout">Log Out</a></li>
                       <% else %>    
                         <li><a href="/">Sign Up</a></li>
@@ -46,6 +50,8 @@
                   </div>
                 </div>
   </nav>
+</div>
+</div>
   <%= yield %>
   <div id="footer" class="container">
       <p class="text-muted">Pharm Assist+ &copy 2014</p>

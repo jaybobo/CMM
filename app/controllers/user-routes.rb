@@ -43,7 +43,7 @@ post '/session/new' do
 	p @user
 	if @user.save
 		session[:user_id] = @user.id
-		erb :"users/dashboard" 
+		redirect '/dashboard'
 	else
 		redirect to "/"
 	end
