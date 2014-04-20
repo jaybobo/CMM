@@ -38,9 +38,10 @@ div.glyph_list {
   z-index: 1;
   position: absolute;
   top: 20%;
-  left: 10%;
-  right: 10%;
-  width: 80%;
+  left: auto;
+  right: auto;
+  width: 100%;
+  text-align: center;
 /*  margin-right: auto;
   margin-left: auto;*/
 }
@@ -81,6 +82,18 @@ span.glyph_desc {
   display: block;
   text-align: center;
 }
+
+div.two_glyphs {
+  display: inline;
+}
+
+/*div#glyph_1 {
+  margin-left: auto;
+}
+
+div#glyph_2 {
+  margin-right: auto;
+}*/
 
 div#sidebar-wrapper {
   width: 130px;
