@@ -1,3 +1,3 @@
 get '/help' do
-  erb :help
+  erb :"help/index"
 end
