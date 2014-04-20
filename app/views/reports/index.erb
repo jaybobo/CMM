@@ -26,11 +26,34 @@
   <svg id="test2"></svg>
 </div>
 
+<p>Lorem ipsum dolor sit amet, labore debitis corpora ut ius, quod deterruisset cu qui, vim no rebum meliore pericula. Forensibus instructior usu ne, utinam mollis his et. Vim et cibo moderatius honestatis. Mucius similique his id, id modo ornatus his, probatus similique adolescens duo ut.</p>
+<p>Possit tibique singulis et usu, duo eu causae quaerendum. Ferri putent incorrupte cum at. Suavitate sententiae ea vel, omnesque iudicabit adolescens mea et. At nam elit audiam accusam, no duo bonorum delenit.</p>
 
-<p>Lorem ipsum dolor sit amet, labore debitis corpora ut ius, quod deterruisset cu qui, vim no rebum meliore pericula. Forensibus instructior usu ne, utinam mollis his et. Vim et cibo moderatius honestatis. Mucius similique his id, id modo ornatus his, probatus similique adolescens duo ut.</p>
-<p>Possit tibique singulis et usu, duo eu causae quaerendum. Ferri putent incorrupte cum at. Suavitate sententiae ea vel, omnesque iudicabit adolescens mea et. At nam elit audiam accusam, no duo bonorum delenit.</p>
-<p>Lorem ipsum dolor sit amet, labore debitis corpora ut ius, quod deterruisset cu qui, vim no rebum meliore pericula. Forensibus instructior usu ne, utinam mollis his et. Vim et cibo moderatius honestatis. Mucius similique his id, id modo ornatus his, probatus similique adolescens duo ut.</p>
-<p>Possit tibique singulis et usu, duo eu causae quaerendum. Ferri putent incorrupte cum at. Suavitate sententiae ea vel, omnesque iudicabit adolescens mea et. At nam elit audiam accusam, no duo bonorum delenit.</p>
+<div class="table-responsive">
+<table class="table table-bordered table-hover">
+  <thead>
+  <tr><th>PA Submissions <small>(PriorAuthPlus, EasyButton, Web)</small></th></tr>
+  <tr> <th>Metric</th> <th>July</th><th>Aug</th><th>Sept</th><th>Oct</th><th>Nov</th><th>Dec</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @summary_table_data.each do |type,data| %>
+  <tr><td><%= type %></td>
+    <% data.each do |num| %>
+    <td><%= num %></td>
+    <% end %>
+  </tr>
+  <% end %>
+
+  <tr> <td><strong>Totals</strong></td> 
+  <% @summary_table_totals.each do |total| %>
+    <td><%= total %></td>
+  <% end %>
+  </tr>
+  </tbody>
+</table>
+</div>
 
 </section>
 
